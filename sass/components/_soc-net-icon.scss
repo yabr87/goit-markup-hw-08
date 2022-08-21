@@ -1,0 +1,37 @@
+.soc-net {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.soc-net__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    color: var(--color-design-global);
+    background-color: var(--color-design);
+  }
+}
+
+.soc-net__icon {
+  fill: currentColor;
+}
+
+.soc-net__link--dark {
+  color: var(--color-design-global);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: var(--transition-bg);
+}
+
+.soc-net__link--light {
+  color: var(--color-team-icon);
+  background-color: var(--color-design-global);
+  transition: var(--transition-color), var(--transition-bg);
+}

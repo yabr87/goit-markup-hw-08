@@ -1,0 +1,100 @@
+.portfolio.section {
+  padding-top: 94px;
+}
+
+.project__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.portfolio__project {
+  margin-top: 50px;
+}
+
+.project__link {
+  display: block;
+  background-color: var(--color-design-global);
+}
+.project__link:hover,
+.project__link:focus {
+  box-shadow: var(--shadow-portfolio-project);
+}
+.project__data {
+  position: relative;
+  overflow: hidden;
+}
+
+.project__descr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--color-design-global);
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: var(--transfotm-cubic);
+  transform: translateY(101%);
+  opacity: 0;
+}
+
+.project__link:hover .project__descr,
+.project__link:focus .project__descr {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.project__content {
+  padding: 20px 24px;
+  border: 1px solid var(--color-design-line);
+  border-top-style: none;
+}
+
+.project__title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-text-title);
+  margin-bottom: 4px;
+}
+.project__text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.portfolio__btn-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 8px;
+}
+
+.portfolio__btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-text-title);
+  background-color: var(--color-btn-portfolio);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  padding: 6px 22px;
+  transition: var(--transition-color), var(--transition-bg), var(--transition-shadow);
+}
+
+.portfolio__btn:hover,
+.portfolio__btn:focus {
+  background-color: var(--color-design);
+  color: var(--color-design-global);
+  box-shadow: var(--shadow-portfolio-btn);
+}
