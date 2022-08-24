@@ -57,3 +57,36 @@ overflow: hidden;
 
 меню при поворачивании экрана пропадает
 ```
+
+```scss
+@mixin font($fs, $lh, $fw, $ls) {
+  font-size: $fs + px;
+  line-height: $lh / $fs;
+  font-weight: $fw;
+  letter-spacing: $ls;
+}
+
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+```

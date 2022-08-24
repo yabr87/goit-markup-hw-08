@@ -1,30 +1,24 @@
 .container {
+  width: 100%;
+  outline: 1px solid red;
   margin: 0 auto;
   padding: 0 15px;
 
-  @media screen and (min-width: 320px) {
-    width: 320px;
-    background-color: red;
-  }
-
   @media screen and (min-width: 480px) {
-    width: 480px;
-    background-color: burlywood;
+    max-width: 480px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
-    background-color: cadetblue;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
-    background-color: aqua;
+    max-width: 1200px;
   }
 }
 
 .section {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 
 .text {
@@ -65,8 +59,20 @@
   pointer-events: none;
 }
 
-// .work__title,
-// .team__title,
-// .clients__title {
-//   margin-bottom: 50px;
-// }
+.work__title,
+.team__title,
+.clients__title {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+  }
+
+  .work__title,
+  .team__title,
+  .clients__title {
+    margin-bottom: 50px;
+  }
+}

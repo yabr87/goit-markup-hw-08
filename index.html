@@ -20,45 +20,56 @@
 
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <div class="logo header__logo">
           <!-- prettier-ignore -->
           <a class="logo__link link" href="./index.html">
             <span class="logo__label logo__label--blue">Web</span><span class="logo__label logo__label--black">Studio</span>
           </a>
         </div>
-        <nav class="navigation">
-          <ul class="navigation__list list">
-            <li class="navigation__item">
-              <a
-                class="navigation__link navigation__link--current link"
-                href="./index.html"
-              >
-                Студия
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link link" href="./portfolio.html">Потфолио</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link link" href="#address-webstudio">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="address header__address">
-          <a class="address__link link" href="mailto:info@example.com">
-            <svg class="address__icon" width="16" height="16">
-              <use href="./images/icon.svg#icon-envelope"></use>
-            </svg>
-            info@example.com
-          </a>
-          <a class="address__link link" href="tel:+380991111111">
-            <svg class="address__icon" width="16" height="16">
-              <use href="./images/icon.svg#icon-smartphone"></use>
-            </svg>
-            +38 099 111 11 11
-          </a>
+        <div class="header__menu">
+          <nav class="navigation">
+            <ul class="navigation__list list">
+              <li class="navigation__item">
+                <a
+                  class="navigation__link navigation__link--current link"
+                  href="./index.html"
+                >
+                  Студия
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link" href="./portfolio.html">Потфолио</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link" href="#address-webstudio">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="address header__address">
+            <a class="address__link link" href="mailto:info@example.com">
+              <svg class="address__icon" width="16" height="16">
+                <use href="./images/icon.svg#icon-envelope"></use>
+              </svg>
+              info@example.com
+            </a>
+            <a class="address__link link" href="tel:+380991111111">
+              <svg class="address__icon" width="16" height="16">
+                <use href="./images/icon.svg#icon-smartphone"></use>
+              </svg>
+              +38 099 111 11 11
+            </a>
+          </div>
         </div>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu__icon menu__icon--open" width="40" height="40">
+            <use href="./images/icon.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -688,6 +699,83 @@
         </form>
       </div>
     </div>
+
+    <div class="menu menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu__icon menu__icon--close" width="40" height="40">
+          <use href="./images/icon.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <nav class="navigation menu__navigation">
+        <ul class="navigation__menu-list list">
+          <li class="navigation__menu-item">
+            <a
+              class="navigation__menu-link navigation__menu-link--active link"
+              href="./index.html"
+            >
+              Студия
+            </a>
+          </li>
+          <li class="navigation__menu-item">
+            <a class="navigation__menu-link link" href="./portfolio.html">Потфолио</a>
+          </li>
+          <li class="navigation__menu-item">
+            <a class="navigation__menu-link link" href="#address-webstudio">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="menu__bottom">
+        <div class="menu__address">
+          <a class="menu__mail link" href="mailto:info@example.com">info@example.com</a>
+          <a class="menu__tel link" href="tel:+380991111111">+38 099 111 11 11</a>
+        </div>
+
+        <div class="menu__soc-list list">
+          <a
+            class="menu__soc-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            Instagram
+          </a>
+          <a
+            class="menu__soc-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            Twitter
+          </a>
+          <a
+            class="menu__soc-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            Facebook
+          </a>
+          <a
+            class="menu__soc-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

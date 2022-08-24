@@ -1,3 +1,4 @@
+@import "./utils/mixins";
 @import "./utils/variables.scss";
 @import "./utils/reset";
 @import "./utils/global-style";
@@ -15,3 +16,4 @@
 @import "./components/modal";
 @import "./components/soc-net-icon";
 @import "./components/close-btn";
+@import "./components/mobile-memu";

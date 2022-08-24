@@ -14,8 +14,9 @@
 }
 
 .modal {
-  position: absolute;
-  max-width: 528px;
+  position: relative;
+  // position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
