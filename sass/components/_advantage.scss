@@ -1,6 +1,11 @@
 .advantage.section {
-  padding-top: 94px;
+  padding-top: 60px;
+
+  @include desktop {
+    padding-top: 94px;
+  }
 }
+
 .advantage__list {
   display: flex;
   flex-wrap: wrap;
@@ -9,12 +14,18 @@
 }
 
 .advantage__item {
-  flex-basis: calc(100% / 4 - 30px);
+  @include tablet {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
 }
 
 .advantage__box-icon {
   height: 120px;
-  min-width: 270px;
+  width: 100%;
   background-color: var(--color-advantage-box);
   border-radius: 4px;
   margin-bottom: 30px;
@@ -30,10 +41,16 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .advantage__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }

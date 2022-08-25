@@ -1,5 +1,9 @@
 .clients.section {
-  padding-top: 94px;
+  padding-top: 60px;
+
+  @include desktop {
+    padding-top: 94px;
+  }
 }
 .clients {
   &__list {
@@ -9,13 +13,26 @@
     gap: 30px;
   }
 
+  &__item {
+    width: 100%;
+    flex-basis: calc((100% - 1 * 30px) / 2);
+
+    @include tablet {
+      flex-basis: calc((100% - 2 * 30px) / 3);
+    }
+
+    @include desktop {
+      flex-basis: calc((100% - 5 * 30px) / 6);
+    }
+  }
+
   &__icon {
     fill: currentColor;
   }
 
   &__link {
     height: 92px;
-    min-width: 170px;
+    width: 100%;
     border: 1px solid var(--color-clients-logo);
     border-radius: 4px;
     display: flex;

@@ -1,5 +1,8 @@
 .team.section {
-  padding-top: 94px;
+  padding-top: 60px;
+  @include desktop {
+    padding-top: 94px;
+  }
 }
 
 .team {
@@ -21,6 +24,15 @@
   background-color: var(--color-design-global);
   box-shadow: var(--shadow-team-item);
   border-radius: 0px 0px 4px 4px;
+  flex-basis: 100%;
+
+  @include tablet {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
 }
 
 .team__member {
