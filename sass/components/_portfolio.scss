@@ -1,5 +1,9 @@
 .portfolio.section {
-  padding-top: 94px;
+  padding-top: 60px;
+
+  @include desktop {
+    padding-top: 94px;
+  }
 }
 
 .project__list {
@@ -8,15 +12,37 @@
   justify-content: center;
   gap: 30px;
 }
+.project__item {
+  flex-basis: 100%;
+
+  @include tablet {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+  }
+}
 
 .portfolio__project {
-  margin-top: 50px;
+  margin-top: 30px;
+
+  @include tablet {
+    margin-top: 40px;
+  }
+
+  @include desktop {
+    margin-top: 50px;
+  }
 }
 
 .project__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background-color: var(--color-design-global);
 }
+
 .project__link:hover,
 .project__link:focus {
   box-shadow: var(--shadow-portfolio-project);
@@ -53,6 +79,7 @@
   padding: 20px 24px;
   border: 1px solid var(--color-design-line);
   border-top-style: none;
+  flex-grow: 1;
 }
 
 .project__title {

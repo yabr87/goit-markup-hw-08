@@ -73,15 +73,18 @@
   letter-spacing: 0.02em;
   color: var(--color-design);
   padding-right: 10px;
+
+  @include mobile {
+    font-size: 18px;
+  }
+}
+
+.menu__soc-item {
   &:not(:first-child) {
     padding-left: 10px;
   }
   &:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
-  }
-
-  @include mobile {
-    font-size: 18px;
   }
 }
 

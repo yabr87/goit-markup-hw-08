@@ -25,6 +25,10 @@
   border-radius: 4px;
   opacity: 1;
   transition: var(--transfotm-cubic), var(--transition-opacity);
+
+  @include desktop {
+    max-width: 528px;
+  }
 }
 
 .form {
@@ -80,12 +84,18 @@
 
 .policy__label {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.66;
   letter-spacing: 0.03em;
   color: var(--color-text-p);
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .policy__link {
@@ -124,7 +134,6 @@
 }
 
 .modal__policy {
-  padding-left: 12px;
   margin-bottom: 30px;
 }
 

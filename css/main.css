@@ -55,7 +55,6 @@ svg {
 
 .container {
   width: 100%;
-  outline: 1px solid red;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -735,7 +734,12 @@ svg {
 }
 
 .portfolio.section {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio.section {
+    padding-top: 94px;
+  }
 }
 
 .project__list {
@@ -745,12 +749,38 @@ svg {
   gap: 30px;
 }
 
+.project__item {
+  flex-basis: 100%;
+}
+@media screen and (min-width: 768px) {
+  .project__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
 .portfolio__project {
-  margin-top: 50px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__project {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__project {
+    margin-top: 50px;
+  }
 }
 
 .project__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background-color: var(--color-design-global);
 }
 
@@ -791,6 +821,7 @@ svg {
   padding: 20px 24px;
   border: 1px solid var(--color-design-line);
   border-top-style: none;
+  flex-grow: 1;
 }
 
 .project__title {
@@ -866,6 +897,11 @@ svg {
   opacity: 1;
   transition: var(--transfotm-cubic), var(--transition-opacity);
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
+}
 
 .form {
   padding: 40px;
@@ -918,12 +954,19 @@ svg {
 
 .policy__label {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.66;
   letter-spacing: 0.03em;
   color: var(--color-text-p);
+}
+@media screen and (min-width: 1200px) {
+  .policy__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .policy__link {
@@ -960,7 +1003,6 @@ svg {
 }
 
 .modal__policy {
-  padding-left: 12px;
   margin-bottom: 30px;
 }
 
@@ -1110,16 +1152,17 @@ svg {
   color: var(--color-design);
   padding-right: 10px;
 }
-.menu__soc-link:not(:first-child) {
-  padding-left: 10px;
-}
-.menu__soc-link:not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
 @media screen and (min-width: 480px) {
   .menu__soc-link {
     font-size: 18px;
   }
+}
+
+.menu__soc-item:not(:first-child) {
+  padding-left: 10px;
+}
+.menu__soc-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .menu__tel {

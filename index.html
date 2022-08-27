@@ -149,8 +149,9 @@
           <ul class="work__list list">
             <li class="work__item">
               <img
-                src="./images/imgstudio1.jpg"
-                alt="сотрудник  веб студии занимается разраюоткой сайта"
+                src="./images/work/img1.jpg"
+                srcset="./images/work/img1-2x.jpg 2x"
+                alt="сотрудник  веб студии занимается разработкой сайта"
                 width="370"
                 height="294"
               />
@@ -158,7 +159,8 @@
             </li>
             <li class="work__item">
               <img
-                src="./images/imgstudio2.jpg"
+                src="./images/work/img2.jpg"
+                srcset="./images/work/img2-2x.jpg 2x"
                 alt="сотрудница компании разрабатывает дизайн приложения"
                 width="370"
                 height="294"
@@ -167,8 +169,9 @@
             </li>
             <li class="work__item">
               <img
-                src="./images/imgstudio3.jpg"
-                alt="илюстратор выбирает цвет напалитре"
+                src="./images/work/img3.jpg"
+                srcset="./images/work/img3-2x.jpg 2x"
+                alt="иллюстратор выбирает цвет на палитре"
                 width="370"
                 height="294"
               />
@@ -183,10 +186,31 @@
           <h2 class="team__title title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                src="./images/productdesigner1.jpg"
-                alt="Мужчина с короткой бородой, в бордовой рубашке и очках."
-              />
+              <picture>
+                <source
+                  srcset="./images/team/ihor.jpg 1x, ./images/team/ihor-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/ihor-tablet.jpg    1x,
+                    ./images/team/ihor-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/ihor-mobile.jpg    1x,
+                    ./images/team/ihor-mobile-2x.jpg 2x
+                  "
+                />
+
+                <img
+                  src="./images/team/ihor-mobile.jpg"
+                  alt="Мужчина с короткой бородой, в бордовой рубашке и очках."
+                />
+              </picture>
+
               <div class="team__data">
                 <h3 class="team__member">Игорь Демьяненко</h3>
                 <p class="team__text text">Product Designer</p>
@@ -247,10 +271,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/frontend2.jpg"
-                alt="Женщина блондинка с длинными волосами, в черном пиджаке, белой блузке и красних очках."
-              />
+              <picture>
+                <source
+                  srcset="./images/team/olga.jpg 1x, ./images/team/olga-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/olga-tablet.jpg    1x,
+                    ./images/team/olga-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/olga-mobile.jpg    1x,
+                    ./images/team/olga-mobile-2x.jpg 2x
+                  "
+                />
+
+                <img
+                  src="./images/team/olga-mobile.jpg"
+                  alt="Женщина блондинка с длинными волосами, в черном пиджаке, белой блузке и красних очках."
+                />
+              </picture>
+
               <div class="team__data">
                 <h3 class="team__member">Ольга Репина</h3>
                 <p class="team__text text">Frontend Developer</p>
@@ -311,10 +356,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/marketing3.jpg"
-                alt="Рыжеватый мужчина с двухнедельной небритостью, в светло голубой рубашке."
-              />
+              <picture>
+                <source
+                  srcset="./images/team/nik.jpg 1x, ./images/team/nik-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/nik-tablet.jpg    1x,
+                    ./images/team/nik-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/nik-mobile.jpg    1x,
+                    ./images/team/nik-mobile-2x.jpg 2x
+                  "
+                />
+
+                <img
+                  src="./images/team/nik-mobile.jpg"
+                  alt="Рыжеватый мужчина с двухнедельной небритостью, в светло голубой рубашке."
+                />
+              </picture>
+
               <div class="team__data">
                 <h3 class="team__member">Николай Тарасов</h3>
                 <p class="team__text text">Marketing</p>
@@ -375,10 +441,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/uidesigner4.jpg"
-                alt="Мужчина в черной футболке с короткой бродой, стильной прической и черный очках."
-              />
+              <picture>
+                <source
+                  srcset="./images/team/mich.jpg 1x, ./images/team/mich-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mich-tablet.jpg    1x,
+                    ./images/team/mich-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mich-mobile.jpg    1x,
+                    ./images/team/mich-mobile-2x.jpg 2x
+                  "
+                />
+
+                <img
+                  src="./images/team/mich-mobile.jpg"
+                  alt="Мужчина в черной футболке с короткой бoродой, стильной прической и черный очках."
+                />
+              </picture>
+
               <div class="team__data">
                 <h3 class="team__member">Михаил Ермаков</h3>
                 <p class="team__text text">UI Designer</p>
@@ -702,18 +789,20 @@
       <nav class="navigation menu__navigation">
         <ul class="navigation__menu-list list">
           <li class="navigation__menu-item">
+            <a class="navigation__menu-link link" href="./index.html">Студия</a>
+          </li>
+          <li class="navigation__menu-item">
             <a
               class="navigation__menu-link navigation__menu-link--active link"
-              href="./index.html"
+              href="./portfolio.html"
             >
-              Студия
+              Потфолио
             </a>
           </li>
           <li class="navigation__menu-item">
-            <a class="navigation__menu-link link" href="./portfolio.html">Потфолио</a>
-          </li>
-          <li class="navigation__menu-item">
-            <a class="navigation__menu-link link" href="#address-webstudio">Контакты</a>
+            <a class="navigation__menu-link js-close-menu link" href="#address-webstudio">
+              Контакты
+            </a>
           </li>
         </ul>
       </nav>
@@ -724,40 +813,48 @@
           <a class="menu__tel link" href="tel:+380991111111">+38 099 111 11 11</a>
         </div>
 
-        <div class="menu__soc-list list">
-          <a
-            class="menu__soc-link link"
-            href=""
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            Instagram
-          </a>
-          <a
-            class="menu__soc-link link"
-            href=""
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            Twitter
-          </a>
-          <a
-            class="menu__soc-link link"
-            href=""
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            Facebook
-          </a>
-          <a
-            class="menu__soc-link link"
-            href=""
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            LinkedIn
-          </a>
-        </div>
+        <ul class="menu__soc-list list">
+          <li class="menu__soc-item">
+            <a
+              class="menu__soc-link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              Instagram
+            </a>
+          </li>
+          <li class="menu__soc-item">
+            <a
+              class="menu__soc-link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              Twitter
+            </a>
+          </li>
+          <li class="menu__soc-item">
+            <a
+              class="menu__soc-link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              Facebook
+            </a>
+          </li>
+          <li class="menu__soc-item">
+            <a
+              class="menu__soc-link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
 
