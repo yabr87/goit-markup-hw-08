@@ -23,7 +23,11 @@
   letter-spacing: 0.02em;
   color: var(--color-text-title);
   transition: var(--transition-color);
-  padding: 28px 0;
+  padding: 24px 0;
+
+  @include desktop {
+    padding: 28px 0;
+  }
 }
 
 .navigation__link--current {
@@ -44,14 +48,21 @@
 
 .address__link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.02em;
   color: var(--color-text-p);
   margin-left: 30px;
   display: inline-flex;
+  align-items: center;
   padding: 5px 0;
   transition: var(--transition-color);
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.143;
+    align-items: center;
+  }
 }
 
 .address__icon {
@@ -82,7 +93,7 @@
   }
 
   .header__container {
-    padding: 14px 15px;
+    padding: 10px 15px;
   }
 }
 
@@ -103,5 +114,3 @@
     display: flex;
   }
 }
-
-
